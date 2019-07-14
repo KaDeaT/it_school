@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'PF Beau Sans Pro Light';
+  src: url('./fonts/PFBeauSansPro-Light.eot');
+  src: url('./fonts/PFBeauSansPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/PFBeauSansPro-Light.woff') format('woff'),
+  url('./fonts/PFBeauSansPro-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF Beau Sans Pro Thin';
+  src: url('./fonts/PFBeauSansPro-Thin.eot');
+  src: url('./fonts/PFBeauSansPro-Thin.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/PFBeauSansPro-Thin.woff') format('woff'),
+  url('./fonts/PFBeauSansPro-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF Beau Sans Pro Semibold';
+  src: url('./fonts/PFBeauSansPro-SemiBold.eot');
+  src: url('./fonts/PFBeauSansPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/PFBeauSansPro-SemiBold.woff') format('woff'),
+  url('./fonts/PFBeauSansPro-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body{
+  font-family: 'PF Beau Sans Pro Light';
+  /* font-family: 'PF Beau Sans Pro Thin'; */
+  font-size: 16px;
+  color: #444;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header_left-block, .header_right-block {
+  height: 190px;
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.header_title-page{
+  font-family: 'PF Beau Sans Pro Semibold';
+  font-size: 2.8em;
+  height: 95px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_horizontal-line__left{
+  border-top: 2px solid transparent;  
+  border-image: linear-gradient(to left, #444 0%, #fff 100%);  
+  border-image-slice: 1;
+  margin: 0;
+}
+
+.header_horizontal-line__right{
+  border-top: 2px solid transparent;  
+  border-image: linear-gradient(to right, #444 0%, #fff 100%);  
+  border-image-slice: 1;
+  margin: 0;
+}
+
+.header_menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  font-size: 1.2em;
+}
+
+.header_menu > li {
+  height: 66px;
+  line-height: 66px;
+  cursor: pointer;
+  flex: 0 1 260px;
+  text-align: center;
+}
+
+.header_menu > li:hover{
+  background-color: #e2423c33;
+  cursor: default; 
+}
+
+.header_menu_active-item {
+  border-bottom: 3px solid #e2423c66;
+  cursor: default;
+}
+
+.header_logo-block{
+  flex: 0 1 240px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.header_logo-block__img{
+  width: 145px;
+}
+
+.header_faculty{
+  height: 95px;
+  text-align: right;
+  margin-right: 50px; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1em;
+}
+
+.mp-navigator-wrap{
+  max-width: 1090px;
+  width: 100%;  
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebars-block{
+  flex: 0 0 280px;
+}
+
+.content-block, .communities-list, .contacts-block {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+.content-block {
+  flex-grow: 1;
+  max-width: 820px;
+  margin-left: 40px;
+  box-sizing: padding-box;
+  padding: 0 36px 50px 36px;
+  font-size: 1.2em;
+}
+
+.content-block > p {
+  text-align: justify;
+}
+
+.content-block_community-logo {
+  max-width: 300px;
+  float:right;
+  padding-left: 20px; /* Отступ слева */
+  padding-bottom: 18px; /* Отступ снизу */
+}
+.content-block_community-logo > img{
+  width: 100%;
+  border-radius: 4px;
+}
+
+.communities-list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.communities-list > li {
+  font-family: 'PF Beau Sans Pro Semibold';
+  font-size: 1.3em;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #aaa;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.communities-list > li:hover{
+  background-color: #e2423c33;
+  cursor: default;
+}
+
+.communities-list_item__active {
+  border-right: 4px solid #e2423c66;
+  box-sizing: border-box;
+}
+
+.fa-angle-right{
+  margin: 0 12px 0 16px;
+  font-size:1.1em;
+}
+
+.communities-list > li:last-child{
+  border-bottom: 0;
+}
+
+
+.contacts-block{
+  margin-top: 35px; 
+  box-sizing: padding-box;
+  padding: 0 36px 18px 36px;
+}
+
+.contacts-block > p {
+  text-align: center;
+}
+
+.contacts-block  a {
+  text-decoration: none;
+  color: #666;
+}
+
+.contacts-block a:hover {
+  color: #e2423c;
+}
+
+.contacts-block_title {
+  font-family: 'PF Beau Sans Pro Semibold';
+  font-size: 1.3em;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+.contacts-block_img {
+  max-width:208px;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.content-block_title {
+  font-family: 'PF Beau Sans Pro Semibold';
+  font-size: 2.5em;
+  text-align: center;
+  color: #e2423c;
+}
+
+
+.content-block_title__small{
+  font-family: 'PF Beau Sans Pro Semibold';
+  font-size: 2em;
+  text-align: center;
+  color: #e2423c;
+}
+
+.content-block_projects-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projects-wrap_item{
+  display: flex;
+  box-sizing: padding-box;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.projects-wrap_item:hover{
+  background-color: #e2423c33;
+}
+
+.projects-wrap_img{
+  max-width: 160px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.projects-wrap_title{
+  font-size: .8em;
+  color: #444;
+}
+
+
+
+.footer{
+  max-width: 1400px;
+  margin: 0 auto;
+}
